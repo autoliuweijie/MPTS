@@ -468,9 +468,9 @@ def main():
         raise Exception("Unknown mode.")
     optimizer, scheduler = get_optimizer_and_scheduler(args, model)
 
-    train_dataloader = DataLoader(train_dataset, batch_size=args.batch_size, shuffle=True, collate_fn=ImpsDataset.collate_fn_with_label)
-    valid_dataloader = DataLoader(valid_dataset, batch_size=args.batch_size, shuffle=False, collate_fn=ImpsDataset.collate_fn_with_label)
-    test_dataloader = DataLoader(test_dataset, batch_size=args.batch_size, shuffle=False, collate_fn=ImpsDataset.collate_fn_with_label)
+    train_dataloader = DataLoader(train_dataset, batch_size=args.batch_size, shuffle=True, collate_fn=MPTSDataset.collate_fn_with_label)
+    valid_dataloader = DataLoader(valid_dataset, batch_size=args.batch_size, shuffle=False, collate_fn=MPTSDataset.collate_fn_with_label)
+    test_dataloader = DataLoader(test_dataset, batch_size=args.batch_size, shuffle=False, collate_fn=MPTSDataset.collate_fn_with_label)
 
     print("Start training.")
     best_f1 = 0
