@@ -1,6 +1,7 @@
 # README
+![](https://img.shields.io/badge/license-MIT-000000.svg)
 
-This is the dataset and code for the paper of "Semantic Matching from Different Perspectives"
+This is the dataset and code for the paper of "Semantic Matching from Different Perspectives", which is an anonymous ACL submission.
 
 
 ## Dataset
@@ -59,10 +60,6 @@ CUDA_VISIBLE_DEVICES='0' python3 -u main.py --mode cross \
 | simcse-bert-large     | https://huggingface.co/princeton-nlp/unsup-simcse-bert-large-uncased |
 | simcse-roberta-base   | https://huggingface.co/princeton-nlp/unsup-simcse-roberta-base |
 | simcse-roberta-large  | https://huggingface.co/gaotianyu1350/unsup-simcse-roberta-large|
-
-
-
-
 
 
 
